@@ -22,7 +22,7 @@ public class Rock extends StaticEntity {
 	@Override
 	public void render(Graphics g) {
 		// TODO Auto-generated method stub
-		g.drawImage(Assets.rock, (int) x, (int) y, width, height, null);
+		g.drawImage(Assets.rock, (int) (x - handler.getGameCamera().getxOffset()), (int) (y - handler.getGameCamera().getyOffset()), width, height, null);
 	}
 
 }
